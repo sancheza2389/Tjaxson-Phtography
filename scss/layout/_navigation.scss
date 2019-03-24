@@ -1,0 +1,116 @@
+
+//Checkbox styling
+.checkbox{
+  display: none;
+
+  &:checked ~ .nav{
+    transform: translateX(-100vw);
+  }
+}
+
+.navi{
+
+  &__button{
+    position: fixed;
+    width: 64px;
+    height: 64px;
+    top: -10px;
+    right: -10px;
+    background-color: $color-white;
+    box-shadow: $box-shadow-subtle;
+    border-bottom-left-radius: 25%;
+    z-index: 2000;
+    text-align: center;
+    cursor: pointer;
+    // Media query
+    @media only screen and (min-width : 700px){
+      height: 100px;
+      width: 100px;
+      margin-bottom: 0;
+      right: 17px;
+      border-bottom-right-radius: 25%;
+    }
+
+  }
+  &__icon{
+    font-size: 40px;
+    position: relative;
+    top: 15%;
+    right: 5%;
+    color: $color-primary;
+    transition: all .5s ease;
+    // Media query
+    @media only screen and (min-width : 700px){
+      font-size: 60px;
+      top: 7px !important;
+      right: 33px;
+      position: fixed;
+    }
+
+    &--x{
+      background-color: $color-white;
+      color: $color-primary;
+      border-bottom-left-radius: 25%;
+      // Media query
+      @media only screen and (min-width : 700px){
+        width: 100px;
+        height: 100px;
+        margin-top: -12px;
+        margin-right: -16px;
+      }
+    }
+  }
+}
+.closed{
+  display: none;
+}
+
+.nav{
+  position: fixed;
+  left: 100vw;
+  z-index: 1500;
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(to bottom left, $color-white, $color-white, $color-primary);
+  transition: all .2s;
+
+  &__list{
+    margin: auto;
+    max-height: 600px;
+  }
+
+  &__main{
+    position: relative;
+    display: block;
+    margin: auto;
+  }
+  &__item{
+    list-style: none;
+    margin: 1rem;
+    max-height: 78px;
+    // Media query
+    @media only screen and (min-width : 700px){
+      margin: 35px !important;
+    }
+  }
+  &__link{
+    color: $color-primary;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: all .5s ease;
+    // Media query
+    @media only screen and (min-width : 700px){
+      font-size: 52.5px !important;
+      padding: 10px;
+      border-radius: 5px;
+
+      &:hover{
+        text-decoration: none;
+        box-shadow:inset  350px 0 0 0 $color-primary;
+        -webkit-box-shadow:inset  350px 0 0 0 $color-primary;
+        color:$color-primary-light;
+        text-shadow: $heavy-text-shadow;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "tjaxson",
+  "version": "1.0.0",
+  "description": "Portfolio site belonging to Tiffany Guzman ( Made by Alex Sanchez )",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "Alexander Sanchez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1"
+  }
+}

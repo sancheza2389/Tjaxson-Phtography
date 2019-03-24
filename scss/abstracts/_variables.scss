@@ -1,0 +1,37 @@
+/*
+
+    COLOR VARIABLES
+
+*/
+$color-black: #2B2B2B;
+$color-white: #fffff4;
+$color-primary: #5a7bb5;
+$color-primary-light: #ccdcf2;
+/*
+
+    FONT VARIABLES
+
+*/
+$cursive: 'Dancing Script', cursive;
+$sans: 'Quicksand', sans-serif;
+/*
+
+    BOX & TEXT SHADOW VARIABLES
+
+*/
+$box-shadow-subtle: 0 2px 4px 0 rgba($color-black,0.10);
+$box-shadow-poloroid: 0 10px 20px rgba($color-black,0.19), 0 6px 6px rgba($color-black,0.23);
+$box-shadow-poloroid-hover: 0 14px 28px rgba($color-black,.25), 0 10px 10px rgba($color-black,.22);
+
+$heavy-text-shadow: 0px 4px 3px rgba($color-primary,0.4),
+                    0px 8px 13px rgba($color-primary,0.1),
+                    0px 18px 23px rgba($color-primary,0.1);
+
+$subtle-text-shadow: 0 1px 0 rgba($color-black, 0.4);
+/*
+
+    MEDIA QUERY VARIABLES
+
+*/
+$break-tablet: "only screen and (min-width : 768px)";
+$break-laptop: "only screen and (min-width : 1024px)";

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Tiffany Jaxson Photography</title>
+		<link rel="icon" href="photos/logo/camera.ico">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Quicksand:300,400,700" rel="stylesheet">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.7.0/js/all.js" integrity="sha384-qD/MNBVMm3hVYCbRTSOW130+CWeRIKbpot9/gR1BHkd7sIct4QKhT1hOPd+2hO8K" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <!--
+
+        navigation
+
+    -->
+
+    <!--     Checkbox that initiates navigation animation     -->
+    <input type="checkbox" class=" navi checkbox" id="toggle">
+    <label for="toggle" class="navi__button">
+      <i class="navi__icon opened icon-basic-photo opened"></i>
+			<div class="navi__icon navi__icon--x closed">X</div>
+    </label>
+    <!--    Navigation background. will drop down once checkbox is checked      -->
+    <div class="nav">
+      <!--     Navigation menu links     -->
+      <nav class="nav__main">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#about" class="nav__link">HOME</a></li>
+          <li class="nav__item"><a href="#bio" class="nav__link">BIO</a></li>
+          <li class="nav__item"><a href="#gallery" class="nav__link">GALLERY</a></li>
+          <li class="nav__item"><a href="#kindwords" class="nav__link">KIND WORDS</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!--
+
+      Header
+
+    -->
+
+    <header id="header" class="header">
+        <img src="photos/logo/tjaxson-logo-blue.png" alt="Tiffany Jaxson Photography">
+    </header>
+
+
+    <!--
+
+			Image Carousel for the homepage
+
+		-->
+
+		<div class="carousel slide carousel-fade" id="carousel" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<img class="d-block w-100" src="photos/maternity/maternity-1.jpeg" alt="Test">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="photos/family/family-8.jpg" alt="Test">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100" src="photos/couples/couples-7.jpeg" alt="Test">
+				</div>
+			</div>
+		</div>
+
+    <!--
+
+      About section
+
+    -->
+
+    <section id="about" class="about">
+      <!-- About heading -->
+      <h2 class="heading about__heading">Let's have some <span class="heading--light">fun!</span></h2>
+
+      <div class="about__container">
+
+        <!--    About me image    -->
+        <img class="about__image poloroid" src="photos/home-page/about.jpg" alt="Mignano Family">
+
+        <!--    About me paragraph    -->
+        <div class="about__content">
+          <p class="about__paragraph">
+            Don't like having your picture taken? I don't either, so I'll
+  					know how to loosen you up! Nervous that your kid is going to
+  					have a nervous breakdown? It's OK, my toddler has prepared me
+  					for those unpredictable moments! I want you to be comfortable
+  					and most importantly, have fun!
+          </p>
+          <p class="about__paragraph">
+            Take a look at my portfolio, and don't forget to check out my
+  					Bio to learn more about me!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--
+
+      Bio section
+
+    -->
+
+    <section id="bio" class="bio">
+      <div class="bio__container">
+        <!--     Bio heading     -->
+        <h2 class="heading bio__heading">A little about me..</h2>
+
+        <!--     Bio paragraphs     -->
+        <div class="bio__content">
+          <p class="bio__paragraph">
+            I’m always up for an adventure, but also can’t wait to lay on the couch
+    				 and watch a couple of movies with a box of pizza. I can get lost in a book
+    				 for hours with a nice large bowl of cookies and cream ice cream next to me,
+    				 or scroll through Pintrest ( yes I'm obssessed ) pinning crafts and recipes to
+    				 try out when I'm not exhausted from chasing my son around.
+          </p>
+          <p class="bio__paragraph">
+            I love capturing people in those real moments, a quick glance at a
+  					loved one, a spontaneous tickle fight, or silly faces. Being able
+  					to have clients feel the love when they look back on photos is
+  					what makes it all worth it. Ready to have a great time? Contact me
+  					below so we can start creating a wonderful experience together!
+          </p>
+        </div>
+        <!--     Bio section image     -->
+        <div class="bio__image">
+          <img class="poloroid bio__image--pic" src="photos/home-page/bio-1.jpg" alt="Tiffany Guzman">
+          <img class="poloroid bio__image--pic" src="photos/home-page/bio-2.jpg" alt="Tiffany Guzman">
+          <img class="poloroid bio__image--pic" src="photos/home-page/bio-3.jpg" alt="Tiffany Guzman">
+        </div>
+
+      </div>
+    </section>
+
+    <!--
+
+      Gallery section
+
+    -->
+
+    <section id="gallery" class="gallery">
+      <!--     Gallery heading     -->
+        <h2 class="heading gallery__heading">Gallery</h2>
+
+      <!--     Gallery links     -->
+      <div class="gallery__container">
+        <!--     First link - -  Maternity     -->
+        <div class="gallery__link">
+					<a href="maternity.html">
+						<figure class="gallery__figure poloroid">
+							<img src="photos/home-page/gallery-maternity.jpg" alt="Maternity" class="gallery__image">
+							<figcaption class="gallery__figure--caption">Maternity</figcaption>
+						</figure>
+					</a>
+				</div>
+        <!--     Second link - -  Family     -->
+        <div class="gallery__link">
+					<a href="family.html">
+						<figure class="gallery__figure poloroid">
+							<img src="photos/home-page/gallery-family.jpg" alt="Family" class="gallery__image">
+							<figcaption class="gallery__figure--caption">Family</figcaption>
+						</figure>
+					</a>
+				</div>
+        <!--     Third link - -  Couples     -->
+        <div class="gallery__link">
+					<a href="couples.html">
+						<figure class="gallery__figure poloroid">
+							<img src="photos/home-page/gallery-couples.jpg" alt="Couples" class="gallery__image">
+							<figcaption class="gallery__figure--caption">Couples</figcaption>
+						</figure>
+					</a>
+				</div>
+
+      </div>
+    </section>
+
+    <div class="separate"></div>
+
+    <!--
+
+      Kind words section
+
+    -->
+
+    <section id="kindwords" class="kind-words">
+
+      <!--     Kind words heding -->
+        <h2 class="heading kind-words__heading">Kind Words</h2>
+
+      <!--     First entry, Mignano Family     -->
+
+      <div class="kind-words__row">
+        <img class="kind-words__image poloroid" src="photos/home-page/mignano2.jpg" alt="Mignano Family">
+        <p>
+          "You can tell that Tiffany takes a lot of pride in her photos. She’s captured some
+						of the most important moments in my life. With my second pregnancy I decided to do
+						a special session of just me and my daughter before the new baby arrived. We had such
+						a great time as Tiffany captured some special moments between us. I was so happy with
+						the photos that I decided to book both my maternity shoot and delivery session. She was
+						super helpful, incredibly patient, and helped me capture some truly magical moments, my
+						whole baby’s story from maternity to newborn. She is truly my go to photographer."<br>
+            <span>-Mignano Family</span>
+        </p>
+      </div>
+
+      <!--     Second entry, Cox Family     -->
+
+      <div class="kind-words__row">
+        <p>
+          "I would like to first start off by saying thank you for the photo shoots. My maternity
+						pictures and our first family shoot was amazing. I am still receiving compliments on the
+						photos and its all thanks to you!! In both shoots nothing but natural lighting was used
+						and it was spectacular you are a natural. Thank you for taking all my request into consideration
+						and bringing my vision to life and making it even bigger and better then I expected. I
+						enjoyed shooting with you and can not wait for our next shoot!!! Thank you again."<br>
+            <span>-Cox Family</span>
+        </p>
+        <img class="kind-words__image kind-words__image--alt poloroid" src="photos/home-page/cox2.jpg" alt="Cox Family">
+      </div>
+
+      <!--     Third entry, Lynette & Andrew     -->
+
+      <div class="kind-words__row">
+        <img class="kind-words__image poloroid" src="photos/home-page/lynette2.jpg" alt="Lynette & Andrew">
+        <p>
+          "Myself and my boyfriend had the pleasure of having Tiffany take pictures of us before the fall.  One of the reasons
+          I say it was a pleasure is because how comfortable she made the whole process. That normal awkwardness that you feel
+          when you are posing in front of a camera never happened. She made it so comfortable and easy. She also was so detailed
+          and considerate about making sure that our pictures weren’t just pictures, they were a reflection of our relationship.
+          She was able to capture such beautiful moments that were an amazing reflection of our love for each other. And the
+          turn around time for us to get the pictures was so quick! We had them within a few days of the shoot. If you are
+          looking for a talented, professional, creative and timely photographer Tiffany is it!"<br>
+            <span>-Lynette & Andrew</span>
+        </p>
+      </div>
+
+    </section>
+
+    <div class="separate"></div>
+
+    <!--
+
+      Contact section
+
+    -->
+
+    <section class="contact" id="contact">
+
+        <div class="email">
+          <!-- email form -->
+          <form class="email__form" action="mailto:tjaxsonphotography@gmail.com" method="post">
+            <fieldset>
+              <!-- Form heading -->
+              <legend class="heading">Quick Contact</legend>
+              <p>I would love to hear from you. Please feel free to contact me!</p>
+              <!--  Email form inputs -->
+              <div class="email__input">
+                <input type="text" id="name" name="name" placeholder="Name">
+                <label for="name">Name</label>
+              </div>
+
+              <div class="email__input">
+                <input type="text" id="email" name="email" placeholder="Email">
+                <label for="email">Email</label>
+              </div>
+
+              <div class="email__input">
+                <label for="message">Your Message</label>
+                <textarea type="text" id="message" name="message" placeholder="Your Message" rows="8"></textarea>
+              </div>
+
+              <button class="email__button" type="submit">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+
+        <!--     "Visit my Instagram" image/link     -->
+
+        <div class="instagram">
+          <div class="instagram__container">
+            <!--     Instagram heading     -->
+            <div class="instagram__heading">
+              <h2 class="heading">Visit my <span class="instagram__heading--alt">Instagram</span></h2>
+              <!-- bouncing arrow under the heading -->
+              <i class="fas fa-caret-down instagram__heading--arrow"></i>
+            </div>
+            <!--     Instagram image/link -->
+  					<a href="https://www.instagram.com/tjaxsonphoto/" target="_blank">
+  						<div class="instagram__image poloroid">
+      					<img src="photos/home-page/instagram.JPG" alt="Instagram">
+  							<div class="instagram__icon">
+  								<i class="fab fa-instagram"></i>
+  								<p>@tjaxsonphoto</p>
+  							</div>
+    					</div>
+  					</a>
+          </div>
+        </div>
+
+    </section>
+
+    <!--
+
+        footer
+
+    -->
+
+    <footer class="footer">
+      <div class="footer__container">
+        <img class="footer__logo" id="footer__logo" src="photos/logo/tjaxson-logo-white.png" alt="Tiffany Jaxson Photography">
+				<p>&copy;2019 Tiffany Jaxson Photography</p>
+				<p>Site by Alex Sanchez Web Dev</p>
+			</div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" charset="utf-8"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

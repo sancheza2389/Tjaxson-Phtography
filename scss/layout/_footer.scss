@@ -1,0 +1,30 @@
+.footer{
+  width: 100%;
+  position: relative;
+  margin-top: 40px;
+  top: 10%;
+  background-color: $color-primary;
+  border-top: 2px solid $color-primary-light;
+  //background-image: linear-gradient(to bottom, $color-white, $color-white, $color-primary, $color-primary);
+
+  &__container{
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+
+    & img{
+      height: 60px;
+      // Media query
+      @media only screen and (min-width : 700px){
+        height: 1.5rem;
+      }
+    }
+
+    & p{
+      color: $color-primary-light;
+      text-shadow: $heavy-text-shadow;
+      font-size: 11px;
+      margin: 0;
+    }
+  }
+}

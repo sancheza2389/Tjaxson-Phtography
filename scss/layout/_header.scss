@@ -1,0 +1,21 @@
+/*
+
+    Simple header with site logo
+
+*/
+
+.header{
+  background-color: $color-white;
+  height: 55px;
+  // Media query
+  @media only screen and (min-width : 700px){
+    height: 92px;
+  }
+
+  & img{
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+}

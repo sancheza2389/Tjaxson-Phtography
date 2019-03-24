@@ -1,0 +1,142 @@
+//  Keyframes
+// Floating back to top button
+@keyframes float {
+	0% {
+		//box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		//box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-10px);
+	}
+	100% {
+		//box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+// back to top button
+.toTop{
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  border: 5px solid rgba($color-black, .7);
+  border-radius: 50%;
+  position: fixed;
+  bottom: 2%;
+  left: 2%;
+  z-index: 10000;
+  //  Floating animation
+  animation: float 3s ease-in-out infinite;
+  -webkit-animation: float 3s ease-in-out infinite;
+  -moz-animation: float 3s ease-in-out infinite;
+
+
+  //arrow styling, which is inherited from parent
+  font-size: 25px;
+  color: rgba($color-black, .7);
+
+  &:focus{outline: none;}
+
+  // Media query
+  @media only screen and (min-width : 700px){
+    display: none;//only displays on mobile/single column view
+  }
+
+}
+
+// gallery styling
+.image-gallery{
+    padding-bottom: 25px;
+  &__container{
+    // Media query
+    @media only screen and (min-width : 700px){
+      width: 80%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 30% 30% 30%;
+      grid-template-rows: auto;
+      grid-gap: 4%;
+    }
+  }
+  // Header
+  &__header{
+    & img{
+      // Media query
+      @media only screen and (min-width : 700px){
+        height: 100px;
+        position: relative;
+        left: -3%;
+      }
+    }
+  }
+  //Button style
+  &__back-button{
+    float: left;
+    position: relative;
+    top: 0;
+    height: 50px;
+    width: 60px;
+    background-color: $color-white;
+    font-size: 25px;
+    border-bottom-right-radius: 10%;
+    box-shadow: $box-shadow-subtle;
+    border: none;
+    transition: all .2s;
+    // Media query
+    @media only screen and (min-width : 700px){
+      height: 90px;
+      width: 100px;
+      font-size: 40px;
+    }
+
+    &:hover,
+    &:active{
+      background: $color-primary;
+      & a{
+        color: $color-primary-light;
+      }
+    }
+
+    & a{
+      color: $color-primary;
+      text-shadow: $heavy-text-shadow;
+    }
+  }
+  // Heading style
+  &__heading{
+    margin: 2rem 0;
+    padding: 0;
+    // Media query
+    @media only screen and (min-width : 500px){
+      margin: 50px 0;
+    }
+    @media only screen and (min-width : 700px){
+      font-size: 150px;
+      margin: 100px 0 !important;
+    }
+  }
+  // GALLERY
+  &__image{
+    width: 80%;
+    margin: 1rem auto;
+    @media only screen and (min-width : 700px){
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+    & img{
+      width: 100%;
+    }
+  }
+}
+// Editing Modal
+.show{
+  //opacity: 0.9;
+  background-color: rgba($color-black, .99) !important;
+}
+
+.modal-body{
+  padding: 15px !important;
+  border-radius: 2px !important;
+}

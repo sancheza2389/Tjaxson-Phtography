@@ -1,0 +1,24 @@
+/*
+
+    POLOROID IMAGE BORDERS FOR ALL IMAGE CONTAINERS (DIVS) ON THE SITE
+    WITH THE "poloroid" CLASS. ALSO ADDS A SHADOW FOR DEPTH.
+
+*/
+
+.poloroid{
+  -webkit-box-shadow: $box-shadow-poloroid-hover;
+  -moz-box-shadow: $box-shadow-poloroid-hover;
+  -o-box-shadow: $box-shadow-poloroid-hover;
+  box-shadow: $box-shadow-poloroid-hover;
+
+  border: .3rem solid $color-white;
+  // Media query
+  @media only screen and (min-width : 1080px){
+    border: 16.1px solid $color-white;
+  }
+
+  //@media only screen and (min-width : 1100px){
+  //  border: 1rem solid $color-white;
+  //  border-bottom: 2.5rem solid $color-white;
+  //}
+}
